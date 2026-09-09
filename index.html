@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level Up | Inicio</title>
+    <!-- Imagen de la pagina -->
+     <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
+    <!-- Importacion de Bootstrap V5.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- Fuentes de Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@400;500;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700;800;900&family=Roboto+Flex:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/index.css">
+
+</head>
+<body class="bg-black">
+    <header class="bg-black border-bottom">
+        <!-- Mini seccion arriba del navbar -->
+        <div class="container-fluid"> 
+            <div class="container d-flex justify-content-between p-1">
+                <!-- Texto de envios -->
+                <div class="d-flex gap-2 align-items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="18" height="18"><path fill="#cccccc" d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5zm1.294 7.456A2 2 0 0 1 4.732 11h5.536a2 2 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456M12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12zm-9 1a1 1 0 1 0 0 2a1 1 0 0 0 0-2m9 0a1 1 0 1 0 0 2a1 1 0 0 0 0-2"/></svg>
+                    <small>Despacho a todo Chile</small>
+                </div>
+                <!-- Iniciar sesion -->
+                <div class="d-flex gap-2 align-items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"><path fill="none" stroke="#cccccc" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0-8 0M6 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"/></svg>
+                    <a href="#" class="text-decoration-none text-light">
+                        <small>Iniciar Sesión</small>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar -->
+         <div class="container d-flex align-items-center justify-content-between gap-4 py-3">
+            <a href="#" class="d-flex align-items-center">
+                <img src="/assets/logo-level-up.png" alt="Logo Level Up" style="width: 90px; height: 100px; object-fit: contain;">
+            </a>
+
+            <div class="d-flex flex-column mx-auto">
+                <div class="input-group mb-1">
+                    <input type="search" class="form-control" placeholder="Buscar productos, marcas y más..." aria-label="Buscar">
+                    <button class="btn btn-primary" type="button" id="button-search">Buscar</button>
+                </div>
+
+                <nav class="navbar navbar-expand-lg p-0">
+                    <div class="container-fluid px-0">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                            <ul class="navbar-nav gap-2 align-items-center">
+                                <li class="nav-item dropdown">
+                                    <a class="btn btn-primary btn-sm dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Todas las categorías
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Juegos de Mesa</a></li>
+                                        <li><a class="dropdown-item" href="#">Accesorios</a></li>
+                                        <li><a class="dropdown-item" href="#">Consolas</a></li>
+                                        <li><a class="dropdown-item" href="#">PC Gamers</a></li>
+                                        <li><a class="dropdown-item" href="#">Sillas Gamers</a></li>
+                                        <li><a class="dropdown-item" href="#">Mouse</a></li>
+                                        <li><a class="dropdown-item" href="#">Mousepad</a></li>
+                                        <li><a class="dropdown-item" href="#">Poleras</a></li>
+                                        <li><a class="dropdown-item" href="#">Servicio Técnico</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item"><a class="nav-link" href="#">Juegos de Mesa</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Accesorios</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Consolas</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">PC Gamers</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="d-flex align-items-center gap-5 text-nowrap">
+                <a href="#" class="text-decoration-none text-light d-flex align-items-center gap-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="16" height="16"><path fill="#cccccc" d="M384 29.8c-64 0-96.2 27.6-128 64c-31.8-36.4-64-64-128-64S0 72.5 0 200.5c0 64 64 192 256 298.7c192-106.7 256-234.7 256-298.7c0-128-64-170.7-128-170.7M256 450C81.7 346.6 42.7 235.7 42.7 200.5c0-58.4 14.8-128 85.3-128c44.8 0 66.6 15.9 95.9 49.4l32.1 35.9l32.1-35.9c29.3-33.5 51.1-49.4 95.9-49.4c70.5 0 85.3 69.6 85.3 128c0 35.2-39 146.1-213.3 249.5"/></svg>
+                    <span>Favoritos</span>
+                </a>
+                <a href="#" class="text-decoration-none border border-light rounded-3 d-inline-flex align-items-center gap-2 p-2">
+                    <!-- Icono Carrito -->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" class="text-light">
+                        <path fill="none" stroke="currentColor" stroke-linecap="square" stroke-width="2" d="M1 2h3l3 11l-1 4h15M7 21a1 1 0 1 1-2 0a1 1 0 0 1 2 0Zm14 0a1 1 0 1 1-2 0a1 1 0 0 1 2 0ZM7 13h12l3-9H4.545z"/>
+                    </svg>
+                    <!-- Texto y Precio -->
+                    <div class="d-flex flex-column text-start lh-sm">
+                        <span class="text-light fw-medium small">Carrito (3)</span>
+                        <span class="text-secondary fw-bold small">$259.970</span>
+                    </div>
+                    <!-- Flecha Chevron Down -->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" class="text-light ms-1">
+                        <path fill="currentColor" d="M7.41 8.58L12 13.17l4.59-4.59L18 10l-6 6l-6-6z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- Hero Section -->
+         <section class="mt-4" id="hero-section">
+            <div class="container">
+                <!-- Contenedor para dividir en izquierda y derecha-->
+                <div class="row align-items-center g-4">
+                    <!-- Parte izquierda - Titulo, subtitulo y botones -->
+                    <div class="col-12 col-lg-4">
+                        <!-- Titulo -->
+                        <h1 class="fw-bold">
+                            TU MUNDO.<br>
+                            <span class="text-secondary">TU NIVEL.</span>
+                        </h1>
+                        <!-- Subtitulo -->
+                        <p class="text-muted">
+                            Los mejores productos para gamers en Chile.<br>
+                            Calidad, pasión y el mejor precio.
+                        </p>
+                        <!-- Contenedor de los botones -->
+                         <div class="d-flex gap-2">
+                            <button class="btn btn-primary d-inline-flex align-items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16"><path fill="#ffffff" d="M11.4 9.6v4.2H7.2V9.6zm0 9.6V15H7.2v4.2zm5.4-9.6v4.2h-4.2V9.6zm0 9.6V15h-4.2v4.2zM7.2 5.4V2.7c0-1.16.94-2.1 2.1-2.1h5.4c1.16 0 2.1.94 2.1 2.1v2.7h6.3a.9.9 0 0 1 .9.9v13.8a3.3 3.3 0 0 1-3.3 3.3H3.3A3.3 3.3 0 0 1 0 20.1V6.3a.9.9 0 0 1 .9-.9zM9 2.7v2.7h6V2.7a.3.3 0 0 0-.3-.3H9.3a.3.3 0 0 0-.3.3M1.8 20.1a1.5 1.5 0 0 0 1.5 1.5h17.4a1.5 1.5 0 0 0 1.5-1.5V7.2H1.8z"/></svg>
+                                Ver Productos
+                            </button>
+                            <button class="btn btn-outline-secondary d-inline-flex align-items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                                    <path fill="currentColor" d="m21.41 11.41l-8.83-8.83c-.37-.37-.88-.58-1.41-.58H4c-1.1 0-2 .9-2 2v7.17c0 .53.21 1.04.59 1.41l8.83 8.83c.78.78 2.05.78 2.83 0l7.17-7.17c.78-.78.78-2.04-.01-2.83M12.83 20L4 11.17V4h7.17L20 12.83z"/>
+                                    <circle cx="6.5" cy="6.5" r="1.5" fill="currentColor"/>
+                                </svg>
+                                <span>Ofertas Especiales</span>
+                            </button>
+                         </div>
+                    </div>
+                    <!-- Parte del centro - Imagen -->
+                     <div class="col-12 col-lg-4 text-center">
+                        <div class="hero-image-wrapper"> 
+                            <!-- Imagen Hero -->
+                            <img src="/assets/hero-image.png" alt="hero-image" class="hero-image">
+                        </div>
+                     </div>
+                     <!-- Parte izquieda - Card Programa-Level-UP -->
+                      <div class="col-12 col-lg-4">
+                        <div class="container d-flex flex-column border rounded border-secondary p-3"> 
+                            <!-- Titulo -->
+                            <div class="d-flex gap-2 align-items-center mb-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" stroke="#39FF14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 20h14M5 16h14l1-9l-4 3l-4-5l-4 5l-4-3z"/></svg>
+                                <h6 class="mb-0">PROGRAMA LEVEL-UP</h6>
+                            </div>
+                            <!-- Nivel -->
+                             <div class="d-flex align-items-center gap-3">
+                                <!-- SVG del hezagono con texto (nivel) dentro -->
+                                <div class="position-relative d-inline-flex align-items-center justify-content-center" style="width: 52px; height: 52px;">
+                                    <!-- Marco SVG de fondo -->
+                                    <svg class="position-absolute top-0 start-0 w-100 h-100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path fill="#39FF14" d="M21 16.5c0 .38-.21.71-.53.88l-7.9 4.44c-.16.12-.36.18-.57.18s-.41-.06-.57-.18l-7.9-4.44A.99.99 0 0 1 3 16.5v-9c0-.38.21-.71.53-.88l7.9-4.44c.16-.12.36-.18.57-.18s.41.06.57.18l7.9 4.44c.32.17.53.5.53.88zM12 4.15L5 8.09v7.82l7 3.94l7-3.94V8.09z"/>
+                                    </svg>
+                                    <!-- Número semántico HTML (editable por JS) -->
+                                    <span id="user-level" class="font-orbitron fw-bold text-white fs-5 position-relative">
+                                        12
+                                    </span>
+                                </div>
+                                <!-- Texto nivel actual -->
+                                 <div class="d-flex flex-column">
+                                    <small class="text-muted">Tu Nivel Actual</small>
+                                    <h6 class="text-secondary">GAMER PRO</h6>
+                                 </div>
+                             </div>
+                             <!-- Barra de progreso -->
+                            <div class="d-flex justify-content-end mb-1">
+                                <small class="text-muted">2.450 / 3000 pts</small>
+                            </div>
+                            <div class="progress mb-3" role="progressbar" aria-label="level-up-progress" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="height: 6px;">
+                                <div class="progress-bar bg-secondary" style="width: 75%"></div>
+                            </div>
+                            <!-- Linea separadora -->
+                             <div class="border-bottom mb-3"></div>
+                             <!-- Contenedor de los puntos -->
+                              <div class="d-flex justify-content-between align-items-center mb-3">
+                                <h5>Tus Puntos</h5>
+                                <h5>2.450</h5>
+                              </div>
+                              <!-- Boton - Ver Recompensas -->
+                               <button class="btn btn-secondary text-black d-inline-flex align-items-center gap-2 justify-content-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><g fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><path d="M12 21v-9m0-5H7.95c-2.77 0-2.94-4 0-4C11.1 3 12 7 12 7m0 0h4.05c2.896 0 2.896-4 0-4C12.9 3 12 7 12 7"/><path d="M20 12v7a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-7m17 0V9a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v3z"/></g></svg>
+                                Ver Recompensas
+                               </button>
+                        </div>
+                      </div>
+                </div>
+                <!-- Mini seccion de features -->
+                 <div class="row border rounded p-3 mt-3 align-items-center ">
+                    <!-- Envios -->
+                     <div class="col-3 d-flex align-items-center gap-2 border-end">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36"><path fill="#1E90FF" d="M4.875 19.125Q4 18.25 4 17H2.725q-.425 0-.713-.288T1.725 16t.288-.712t.712-.288h2.05q.425-.475 1-.737T7 14t1.225.263t1 .737H13.4l2.1-9H5.75q-.425 0-.712-.288T4.75 5t.288-.712T5.75 4h11q.5 0 .8.375t.175.85L17.075 8H19q.475 0 .9.213t.7.587l1.875 2.475q.275.35.35.763t0 .837L22.15 16.2q-.075.35-.35.575t-.625.225H20q0 1.25-.875 2.125T17 20t-2.125-.875T14 17h-4q0 1.25-.875 2.125T7 20t-2.125-.875M15.925 13h4.825l.1-.525L19 10h-2.375zm-2.475 1.825l.163-.725q.162-.725.412-1.775q.075-.325.15-.6t.125-.55l.163-.725q.162-.725.412-1.775t.413-1.775l.162-.725L15.5 6l-2.1 9zm-11.7-1.5q-.425 0-.712-.287t-.288-.713t.288-.712t.712-.288h3.5q.425 0 .713.288t.287.712t-.288.713t-.712.287zm2-3.65q-.425 0-.712-.288t-.288-.712t.288-.712t.712-.288h4.5q.425 0 .713.288t.287.712t-.288.713t-.712.287zM7 18q.425 0 .713-.288T8 17t-.288-.712T7 16t-.712.288T6 17t.288.713T7 18m10 0q.425 0 .713-.288T18 17t-.288-.712T17 16t-.712.288T16 17t.288.713T17 18"/></svg>
+                        <div class="d-flex flex-column">
+                            <small>Envios a todo Chile</small>
+                            <small class="text-muted">Rápido y seguro</small>
+                        </div>
+                     </div>
+                     
+                     <!-- Seguridad garantizada -->
+                    <div class="col-3 d-flex align-items-center gap-2 border-end">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36"><path fill="#1E90FF" d="M12 22q-3.475-.875-5.738-3.988T4 11.1V5l8-3l8 3v5.675q-.475-.2-.975-.363T18 10.076V6.4l-6-2.25L6 6.4v4.7q0 1.175.313 2.35t.875 2.238T8.55 17.65t1.775 1.5q.275.8.725 1.525t1.025 1.3q-.025 0-.037.013T12 22m5 0q-2.075 0-3.537-1.463T12 17t1.463-3.537T17 12t3.538 1.463T22 17t-1.463 3.538T17 22m-.5-2h1v-2.5H20v-1h-2.5V14h-1v2.5H14v1h2.5z"/></svg>
+                        <div class="d-flex flex-column">
+                            <small>Productos originales</small>
+                            <small class="text-muted">Garantía asegurada</small>
+                        </div>
+                     </div>
+                     <!-- Descuentos exclusivos-->
+                    <div class="col-3 d-flex align-items-center gap-2 border-end">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36"><g fill="none"><path d="m11.878 22.02l-9.9-9.899l9.9-9.9l9.192.708l.707 9.192z"/><path d="M14 7.17A2 2 0 1 1 16.828 10A2 2 0 0 1 14 7.17"/><path stroke="#1E90FF" stroke-width="2" d="m11.878 22.02l-9.9-9.899l9.9-9.9l9.192.708l.707 9.192z"/><path stroke="#1E90FF" stroke-width="2" d="M14 7.17A2 2 0 1 1 16.828 10A2 2 0 0 1 14 7.17Z"/></g></svg>
+                        <div class="d-flex flex-column">
+                            <small>Descuentos exclusivos</small>
+                            <small class="text-muted">Para miembros</small>
+                        </div>
+                     </div>
+                     <!-- Soporte Gamer-->
+                    <div class="col-3 d-flex align-items-center gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36"><path fill="none" stroke="#1E90FF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.9 9.9 0 0 1-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8"/></svg>
+                        <div class="d-flex flex-column">
+                            <small>Soporte Gamer</small>
+                            <small class="text-muted">En Whatsapp</small>
+                        </div>
+                     </div>
+                 </div>
+            </div>
+        </section>
+        <!-- Seccion de categorias destacadas -->
+         <section class="mt-4" id="featured-categories">
+            <div class="container">
+                <div>
+                    <!-- Titulo -->
+                    <h4>CATEGORÍAS DESTACADAS</h4>
+                    <!-- Línea de subrayado del 10% -->
+                    <div class="bg-secondary rounded" style="width: 4%; height: 4px;"></div>
+                </div>
+                <!-- Contenedor scrolleable en pantallas chicas -->
+                 <div class="categorias-scroll mt-4">
+                    <!-- Fila de cards con las categorias -->
+                    <div class="d-flex gap-3 mt-4">
+                        <!-- Juegos de mesa -->
+                        <a href="" class="card-categoria d-flex flex-column  border rounded p-2 text-decoration-none text-light align-items-center gap-2">
+                            <img src="/assets/categories/dados.png" alt="categorias-juegos-mesa" style="width: 72px;">
+                            <small>Juegos de Mesa</small>
+                        </a>
+                        <!-- Accesorios -->
+                        <a href="" class="card-categoria d-flex flex-column border rounded p-2 text-decoration-none text-light align-items-center gap-2">
+                            <img src="/assets/categories/audifonos.png" alt="categorias-juegos-mesa" style="width: 72px;">
+                            <small>Accesorios</small>
+                        </a>
+                        <!-- Consolas -->
+                        <a href="" class="card-categoria d-flex flex-column border rounded p-2 text-decoration-none text-light align-items-center gap-2">
+                            <img src="/assets/categories/control.png" alt="categorias-juegos-mesa" style="width: 72px;">
+                            <small>Consolas</small>
+                        </a>
+                        <!-- PC Gamers -->
+                        <a href="" class="card-categoria d-flex flex-column border rounded p-2 text-decoration-none text-light align-items-center gap-2">
+                            <img src="/assets/categories/pc-gamer.png" alt="categorias-juegos-mesa" style="width: 72px;">
+                            <small>PC Gamers</small>
+                        </a>
+                        <!-- Sillas Gamers -->
+                        <a href="" class="card-categoria d-flex flex-column border rounded p-2 text-decoration-none text-light align-items-center gap-2">
+                            <img src="/assets/categories/silla-gamer.png" alt="categorias-juegos-mesa" style="width: 72px;">
+                            <small>Sillas Gamers</small>
+                        </a>
+                        <!-- Mouse -->
+                        <a href="" class="card-categoria d-flex flex-column border rounded p-2 text-decoration-none text-light align-items-center gap-2">
+                            <img src="/assets/categories/mouse.png" alt="categorias-juegos-mesa" style="width: 72px;">
+                            <small>Mouse</small>
+                        </a>
+                        <!-- Mousepad -->
+                        <a href="" class="card-categoria d-flex flex-column border rounded p-2 text-decoration-none text-light align-items-center gap-2">
+                            <img src="/assets/categories/mouse.png" alt="categorias-juegos-mesa" style="width: 72px;">
+                            <small>Mousepad</small>
+                        </a>
+                        <!-- Poleras -->
+                        <a href="" class="card-categoria d-flex flex-column border rounded p-2 text-decoration-none text-light align-items-center gap-2">
+                            <img src="/assets/categories/mouse.png" alt="categorias-juegos-mesa" style="width: 72px;">
+                            <small>Poleras</small>
+                        </a>
+                        <!-- Servicio Tecnico -->
+                        <a href="" class="card-categoria d-flex flex-column border rounded p-2 text-decoration-none text-light align-items-center gap-2">
+                            <img src="/assets/categories/mouse.png" alt="categorias-juegos-mesa" style="width: 72px;">
+                            <small>Servicio Técnico</small>
+                        </a>
+                    </div>
+                 </div>
+            </div>
+         </section>
+         <!-- Seccion de productos destacados -->
+          <section class="mt-4" id="featured-products">
+            <div class="container">
+                <div>
+                    <!-- Titulo -->
+                    <h4>PRODUCTOS DESTACADOS</h4>
+                    <!-- Línea de subrayado del 10% -->
+                    <div class="bg-secondary rounded" style="width: 4%; height: 4px;"></div>
+                </div>
+            </div>
+          </section>
+    </main>
+    <footer>
+
+    </footer>
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
