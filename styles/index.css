@@ -18,10 +18,7 @@
   --bs-secondary-rgb: 57, 255, 20;
 }
 
-/* Tipografía de títulos / headlines */
-h1, h2, h3, h4, h5, h6, .headline {
-  font-family: 'Space Grotesk', sans-serif;
-}
+
 
 /* Ajuste para que los botones primarios tomen el nuevo color */
 .btn-primary {
@@ -74,8 +71,6 @@ h1, h2, h3, h4, h5, h6, .headline {
 .card-categoria {
     background-color: #1c1f23; /* Gris oscuro base */
     transition: all 0.3s ease; 
-    width: 130px;       /* mismo ancho para todas */
-    flex: 0 0 130px;    /* que no se achiquen ni crezcan */
     text-align: center;
 }
 
@@ -94,28 +89,19 @@ h1, h2, h3, h4, h5, h6, .headline {
     justify-content: center;
 }
 
-/* Contenedor que absorbe el overflow */
-.categorias-scroll {
-    overflow-x: auto;
-    overflow-y: hidden;
-    -webkit-overflow-scrolling: touch; /* scroll suave en iOS */
+.card-producto {
+  background-color: #1c1f23;
 }
 
-.categorias-row {
-    /* evita que las cards se compriman */
-    flex-wrap: nowrap;
-}
+.card-producto:hover {
+  background-color: #2b3035;
+  transform: translateY(-1.5px);
 
-/* Opcional: que se sienta como carrusel con "snap" */
-.categorias-scroll {
-    scroll-snap-type: x mandatory;
-}
-.card-categoria {
-    scroll-snap-align: start;
 }
 
 
-.categorias-scroll::-webkit-scrollbar-thumb {
-    background: rgba(255,255,255,0.2);
-    border-radius: 10px;
+
+footer{
+  background-color: #070707;
 }
+

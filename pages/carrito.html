@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level Up | Carrito</title>
+    <!-- Imagen de la pagina -->
+     <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
+    <!-- Importacion de Bootstrap V5.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- Fuentes de Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@400;500;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700;800;900&family=Roboto+Flex:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/index.css">
+    <link rel="stylesheet" href="/styles/carrito.css">
+</head>
+<body class="bg-black">
+    <header class="d-flex flex-column">
+        <!-- Parte de arriba del header -->
+        <div class="fluid d-flex align-items-center p-3">
+            <a id="boton-atras" href="/index.html" class="d-flex align-items-center gap-1 text-decoration-none text-light border rounded py-2 ps-1 pe-3">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                    <path fill="#ffffff" d="m14 18l-6-6l6-6l1.4 1.4l-4.6 4.6l4.6 4.6z"/>
+                </svg>
+                <p class="mb-0 text-muted">Volver a la tienda</p>
+            </a>
+        </div>
+        <!-- Titulo de la página -->
+         <div class="p-4 d-flex flex-column border-bottom">
+            <span class="text-primary d-flex gap-2 align-items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" class="text-light">
+                    <path fill="none" stroke="#1E90FF" stroke-linecap="square" stroke-width="2" d="M1 2h3l3 11l-1 4h15M7 21a1 1 0 1 1-2 0a1 1 0 0 1 2 0Zm14 0a1 1 0 1 1-2 0a1 1 0 0 1 2 0ZM7 13h12l3-9H4.545z"/>
+                </svg>
+                CARRITO DE COMPRAS
+            </span>
+            <h2>TU SQUAD DE COMPRA</h2>
+         </div>
+    </header>
+    <main class="container-fluid px-4 px-xl-5 py-4">
+        <!-- Fila principal con separación (g-5) -->
+        <div class="row g-5">
+            
+            <!-- Parte izquierda - Lista de Productos -->
+            <div class="col-12 col-lg-8">
+                <div class="d-flex flex-column" id="product-list">
+                    
+                    <!-- Nombres de columnas alineados con grilla -->
+                    <div class="row align-items-center p-3 text-muted small fw-bold mb-2 text-uppercase rounded-top" id="columns-names">
+                        <div class="col-6">PRODUCTO / DETALLE</div>
+                        <div class="col-3 text-center">CANTIDAD</div>
+                        <div class="col-3 text-end pe-4">SUBTOTAL</div>
+                    </div>
+
+                    <!-- Card de Producto (Plantilla JS) -->
+                    <div class="row align-items-center border border-opacity-25 rounded p-3 mb-3 bg-dark">
+                        <!-- Columna 1: Producto y Detalle -->
+                        <div class="col-6 d-flex gap-3">
+                            <div class="d-flex flex-column align-items-center gap-2">
+                                <div class="bg-black border border-secondary border-opacity-25 rounded p-2 d-flex align-items-center justify-content-center" style="width: 72px; height: 72px;">
+                                    <img src="/assets/mouse.png" alt="product-image" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column justify-content-center">
+                                <div class="d-flex gap-2 align-items-center mb-1" style="font-size: 0.75rem;">
+                                    <span class="text-primary text-uppercase">SKU: LOG-G502</span>
+                                    <span class="text-secondary fw-bold">+490 XP LevelUp</span>
+                                </div>
+                                <h6 class="mb-1 fw-bold text-white lh-sm">Mouse Gamer Logitech G502 HERO<br>Lightsync</h6>
+                                <small class="text-muted" style="font-size: 0.75rem;">Sensor 25.600 DPI • 11 Botones programables</small>
+                            </div>
+                        </div>
+
+                        <!-- Columna 2: Selector de Cantidad -->
+                        <div class="col-3 d-flex justify-content-center">
+                            <div class="d-flex align-items-center border border-opacity-25 rounded bg-black px-3 py-1 gap-3">
+                                <button class="btn btn-sm text-white p-0 border-0 fw-bold">-</button>
+                                <span class="text-white fw-bold">1</span>
+                                <button class="btn btn-sm text-white p-0 border-0 fw-bold">+</button>
+                            </div>
+                        </div>
+
+                        <!-- Columna 3: Subtotal y Basurero -->
+                        <div class="col-3 d-flex justify-content-between align-items-center ps-2">
+                            <div class="d-flex flex-column text-end flex-grow-1 me-3">
+                                <h5 class="mb-0 fw-bold text-white">$49.990</h5>
+                                <small class="text-muted" style="font-size: 0.7rem;">$49.990 CLP c/u</small>
+                            </div>
+                            <button class="btn p-0 text-muted border-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M3 6h18"/><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"/><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/><line x1="10" x2="10" y1="11" y2="17"/><line x1="14" x2="14" y1="11" y2="17"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Parte derecha - Resumen pago -->
+            <div class="col-12 col-lg-4">
+                <!-- Box oscuro para el resumen con estilo acorde a la imagen -->
+                <div class="d-flex flex-column bg-dark border rounded-top p-4">
+                    <div class="d-flex align-items-center justify-content-between mb-4" id="resumen-pago">
+                        <h5 class="mb-0 text-white font-orbitron">RESUMEN DE PAGO</h5>
+                    </div>
+                    <!-- Aquí inyectarás el resto del panel de pago -->
+                </div>
+            </div>
+
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,14 @@
+
+
+#boton-atras {
+    background-color: #2b3035;
+}
+#boton-atras:hover{
+    background-color: #1e2123;
+}
+
+form{
+    background-color: #2b3035;
+    max-width: 480px;
+    
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level Up | Iniciar Sesión</title>
+    <!-- Imagen de la pagina -->
+     <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
+    <!-- Importacion de Bootstrap V5.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- Fuentes de Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@400;500;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700;800;900&family=Roboto+Flex:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/index.css">
+    <link rel="stylesheet" href="/styles/login.css">
+</head>
+<body class="bg-black">
+    <header class="mt-2 p-4">
+        <div class="fluid d-flex align-items-center">
+            <a id="boton-atras" href="/index.html" class="d-flex align-items-center gap-1 text-decoration-none text-light border rounded py-2 ps-1 pe-3">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                    <path fill="#ffffff" d="m14 18l-6-6l6-6l1.4 1.4l-4.6 4.6l4.6 4.6z"/>
+                </svg>
+                <p class="mb-0 text-muted">Volver a la tienda</p>
+            </a>
+        </div>
+    </header>
+    <main>
+        <div class="container d-flex align-items-center justify-content-center">
+            <form class="p-4 border border-secondary rounded mb-4">
+                <!-- Logo y titulo -->
+                 <div class="d-flex flex-column gap-2 align-items-center justify-content-center">
+                    <img src="/assets/logo-level-up.png" alt="Logo" style="width: 84px;">
+                    <h4 class="mb-0 text-white">INICIO DE SESIÓN</h4>
+                    <small class="text-muted mb-3">Accede a tu cuenta y obtén los beneficios gamer.</small>
+                 </div>
+                <!-- Input correo electronico -->
+                <div class="mb-3 mt-3">
+                    <label for="input-email" class="form-label font-orbitron">CORREO ELECTRÓNICO</label>
+                    <input type="email" class="form-control" id="input-email" aria-describedby="emailHelp">
+                    <!-- Mensajes de alerta - invisibles por defecto -->
+                     <small class="text-danger d-none" id="alert-email">Error: Correo electrónico inválido</small>
+                </div>
+                <!-- Input contraseña -->
+                 <div class="mb-3">
+                    <label for="input-password" class="form-label font-orbitron">CONTRASEÑA</label>
+                    <input type="password" class="form-control" id="input-password">
+                    <!-- Mensajes de alerta - invisibles por defecto -->
+                     <small class="text-danger d-none" id="alert-password">Error: Contraseña debe tener entre 4 y 10 caracteres.</small>
+                 </div>
+                 <!-- Alerta -->
+                  <div class="alert alert-info d-flex align-items-center gap-3" role="alert">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36"><g fill="none" stroke="#39FF14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4m0-4h.01"/></g></svg>
+                    <p class="mb-0">
+                        Usa tu correo institucional <strong>@duocuc.cl</strong>
+                        para activar tu 20% OFF de por vida.
+                    </p>
+                  </div>
+                 <!-- Boton de iniciar sesion-->
+                  <div class="d-grid mb-3">
+                    <button type="button" class="btn btn-primary font-orbitron" id="btn-login">INICIAR SESIÓN</button>
+                  </div>
+                  <!-- Registro -->
+                   <div class="d-flex align-items-center justify-content-center mt-3">
+                        <small>¿No tienes cuenta? <a href="#" class="text-secondary text-decoration-none">Registrate aquí</a></small>
+                   </div>
+            </form>
+        </div>
+    </main>
+    <script src="/scripts/login.js"></script>
+</body>
+</html>
