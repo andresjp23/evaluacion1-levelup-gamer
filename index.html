@@ -74,7 +74,6 @@
                                 <li class="nav-item"><a class="nav-link" href="#">Accesorios</a></li>
                                 <li class="nav-item"><a class="nav-link" href="#">Consolas</a></li>
                                 <li class="nav-item"><a class="nav-link" href="#">PC Gamers</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#">Sillas Gamers</a></li>
                             </ul>
                         </div>
                     </div>
@@ -92,8 +91,8 @@
                     </svg>
                     <!-- Texto y Precio -->
                     <div class="d-flex flex-column text-start lh-sm">
-                        <span class="text-light fw-medium small">Carrito (3)</span>
-                        <span class="text-secondary fw-bold small">$259.970</span>
+                        <span class="text-light fw-medium small" id="cart-count"><!-- Se agregan dinamicamente--></span>
+                        <span class="text-secondary fw-bold small" id="cart-total"><!--Se suman dinamicamente--></span>
                     </div>
                     <!-- Flecha Chevron Down -->
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" class="text-light ms-1">
@@ -288,5 +287,6 @@
 <!-- Scripts -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 <script type="module" src="/scripts/main.js"></script>
+<script type="module" src="/scripts/carrito.js"></script>
 </body>
 </html>

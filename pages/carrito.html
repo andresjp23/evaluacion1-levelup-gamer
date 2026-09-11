@@ -45,7 +45,7 @@
             
             <!-- Parte izquierda - Lista de Productos -->
             <div class="col-12 col-lg-8">
-                <div class="d-flex flex-column" id="product-list">
+                <div class="d-flex flex-column">
                     
                     <!-- Nombres de columnas alineados con grilla -->
                     <div class="row align-items-center p-3 text-muted small fw-bold mb-2 text-uppercase rounded-top" id="columns-names">
@@ -54,46 +54,7 @@
                         <div class="col-3 text-end pe-4">SUBTOTAL</div>
                     </div>
 
-                    <!-- Card de Producto (Plantilla JS) -->
-                    <div class="row align-items-center border border-opacity-25 rounded p-3 mb-3 bg-dark">
-                        <!-- Columna 1: Producto y Detalle -->
-                        <div class="col-6 d-flex gap-3">
-                            <div class="d-flex flex-column align-items-center gap-2">
-                                <div class="bg-black border border-secondary border-opacity-25 rounded p-2 d-flex align-items-center justify-content-center" style="width: 72px; height: 72px;">
-                                    <img src="/assets/mouse.png" alt="product-image" class="img-fluid">
-                                </div>
-                            </div>
-                            <div class="d-flex flex-column justify-content-center">
-                                <div class="d-flex gap-2 align-items-center mb-1" style="font-size: 0.75rem;">
-                                    <span class="text-primary text-uppercase">SKU: LOG-G502</span>
-                                    <span class="text-secondary fw-bold">+490 XP LevelUp</span>
-                                </div>
-                                <h6 class="mb-1 fw-bold text-white lh-sm">Mouse Gamer Logitech G502 HERO<br>Lightsync</h6>
-                                <small class="text-muted" style="font-size: 0.75rem;">Sensor 25.600 DPI • 11 Botones programables</small>
-                            </div>
-                        </div>
-
-                        <!-- Columna 2: Selector de Cantidad -->
-                        <div class="col-3 d-flex justify-content-center">
-                            <div class="d-flex align-items-center border border-opacity-25 rounded bg-black px-3 py-1 gap-3">
-                                <button class="btn btn-sm text-white p-0 border-0 fw-bold">-</button>
-                                <span class="text-white fw-bold">1</span>
-                                <button class="btn btn-sm text-white p-0 border-0 fw-bold">+</button>
-                            </div>
-                        </div>
-
-                        <!-- Columna 3: Subtotal y Basurero -->
-                        <div class="col-3 d-flex justify-content-between align-items-center ps-2">
-                            <div class="d-flex flex-column text-end flex-grow-1 me-3">
-                                <h5 class="mb-0 fw-bold text-white">$49.990</h5>
-                                <small class="text-muted" style="font-size: 0.7rem;">$49.990 CLP c/u</small>
-                            </div>
-                            <button class="btn p-0 text-muted border-0">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M3 6h18"/><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"/><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/><line x1="10" x2="10" y1="11" y2="17"/><line x1="14" x2="14" y1="11" y2="17"/>
-                                </svg>
-                            </button>
-                        </div>
+                    <div id="product-list">
                     </div>
                 </div>
             </div>
@@ -102,14 +63,18 @@
             <div class="col-12 col-lg-4">
                 <!-- Box oscuro para el resumen con estilo acorde a la imagen -->
                 <div class="d-flex flex-column bg-dark border rounded-top p-4">
-                    <div class="d-flex align-items-center justify-content-between mb-4" id="resumen-pago">
+                    <div class="d-flex align-items-center justify-content-between mb-4">
                         <h5 class="mb-0 text-white font-orbitron">RESUMEN DE PAGO</h5>
                     </div>
-                    <!-- Aquí inyectarás el resto del panel de pago -->
+                    <!-- Aquí se inyecta el resumen de pago dinamicamente -->
+                     <div id="resumen-pago-detalle">
+
+                     </div>
                 </div>
             </div>
 
         </div>
     </main>
+    <script type="module" src="/scripts/carrito.js"></script>
 </body>
 </html>
