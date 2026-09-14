@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level Up | Registro</title>
+    <!-- Imagen de la pagina -->
+     <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700&family=Roboto+Flex:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/index.css">
+    <link rel="stylesheet" href="/styles/login.css">
+</head>
+<body class="bg-black">
+    <header class="mt-2 p-4">
+        <div class="fluid d-flex align-items-center">
+            <a href="/index.html" class="d-flex align-items-center gap-1 text-decoration-none text-light border border-secondary border-opacity-25 rounded py-2 ps-1 pe-3 hover-bg-dark">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                    <path fill="#ffffff" d="m14 18l-6-6l6-6l1.4 1.4l-4.6 4.6l4.6 4.6z"/>
+                </svg>
+                <p class="mb-0 text-muted font-orbitron small">Volver a la tienda</p>
+            </a>
+        </div>
+    </header>
+
+    <main class="container d-flex align-items-center justify-content-center my-4">
+        <form id="form-registro" class="p-4 border border-secondary border-opacity-25 rounded bg-dark needs-validation" style="max-width: 500px; width: 100%;" novalidate>
+            <div class="text-center mb-4">
+                <img src="/assets/logo-level-up.png" alt="Logo" style="width: 84px;" class="mb-2">
+                <h4 class="font-orbitron text-white mb-0">CREAR CUENTA</h4>
+                <small class="text-secondary">Únete y gana puntos Level-Up</small>
+            </div>
+
+            <!-- Datos Personales -->
+            <div class="row g-2 mb-3">
+                <div class="col-md-6">
+                    <label class="form-label small font-orbitron">NOMBRE</label>
+                    <input type="text" class="form-control" id="reg-nombre" required>
+                    <div class="invalid-feedback">Requerido.</div>
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label small font-orbitron">RUN (Sin puntos ni guion)</label>
+                    <input type="text" class="form-control" id="reg-run" minlength="7" maxlength="9" pattern="^[0-9]+[0-9Kk]$" placeholder="Ej: 19011022K" required>
+                    <div class="invalid-feedback">RUN inválido.</div>
+                </div>
+            </div>
+
+            <!-- Correo y Contraseña -->
+            <div class="mb-3">
+                <label class="form-label small font-orbitron">CORREO INSTITUCIONAL O GMAIL</label>
+                <input type="email" class="form-control" id="reg-email" placeholder="usuario@duoc.cl" required>
+                <div class="invalid-feedback">Usa un correo válido (@duoc.cl, @gmail.com).</div>
+            </div>
+
+            <div class="row g-2 mb-3">
+                <div class="col-md-6">
+                    <label class="form-label small font-orbitron">CONTRASEÑA</label>
+                    <input type="password" class="form-control" id="reg-password" minlength="4" maxlength="10" required>
+                    <div class="invalid-feedback">Entre 4 y 10 caracteres.</div>
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label small font-orbitron">FECHA NACIMIENTO</label>
+                    <input type="date" class="form-control" id="reg-fecha" required>
+                    <div class="invalid-feedback">Debes ser mayor de 18 años.</div>
+                </div>
+            </div>
+
+            <!-- Ubicación -->
+            <div class="row g-2 mb-3">
+                <div class="col-md-6">
+                    <label class="form-label small font-orbitron">REGIÓN</label>
+                    <select class="form-select" id="reg-region" required>
+                        <option selected disabled value="">Seleccionar...</option>
+                        <option value="RM">Región Metropolitana</option>
+                        <option value="Valparaiso">Valparaíso</option>
+                    </select>
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label small font-orbitron">COMUNA</label>
+                    <select class="form-select" id="reg-comuna" required>
+                        <option selected disabled value="">Seleccionar...</option>
+                        <option value="Santiago">Santiago</option>
+                        <option value="Providencia">Providencia</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Referidos (Opcional) -->
+            <div class="mb-4">
+                <label class="form-label small font-orbitron text-muted">CÓDIGO DE REFERIDO (OPCIONAL)</label>
+                <input type="text" class="form-control bg-black border-secondary" id="reg-referido" placeholder="Ingresa el código de tu amigo">
+            </div>
+
+            <div class="d-grid mb-3">
+                <button type="submit" class="btn btn-primary font-orbitron fw-bold" id="btn-registrar">REGISTRARSE</button>
+            </div>
+            
+            <div class="text-center">
+                <small class="text-muted">¿Ya tienes cuenta? <a href="/pages/login.html" class="text-primary text-decoration-none">Inicia sesión</a></small>
+            </div>
+        </form>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="/scripts/registro.js"></script>
+</body>
+</html>
